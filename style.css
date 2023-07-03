@@ -1,0 +1,44 @@
+body{
+    font-family: 'Roboto';
+}
+
+.righteous{
+    font-family: 'Righteous';
+}
+
+.cabeçalho{
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+h1{
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 21px;
+
+    color: #FFFFFF;
+
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+}
+
+h2{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 21px;
+    
+    color: #FFFFFF;
+}
+
+
+
+
