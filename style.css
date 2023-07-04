@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto';
+    background-color: rgb(211, 207, 207);
 }
 
 .righteous{
@@ -7,7 +8,6 @@ body{
 }
 
 .cabeçalho{
-    background-color: #CF2B2B;
     width: 414px;
     height: 92px;
 
@@ -15,30 +15,53 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
+    position: relative;
 }
 
-h1{
+.cabeçalho img{
     width: 100%;
-    margin-top: 8px;
-    margin-left: 21px;
+    height: 92px;
 
-    color: #FFFFFF;
+    display: flex;
+    position: absolute;
+}
+.container{
+    width: 414px;
+    margin-top: 20px;
+}
 
-    font-size: 44px;
+.texto-mostruario{
+    font-size: 26px;
     font-weight: 400;
-    line-height: 55px;
-    letter-spacing: -0.012em;
+    line-height: 32px;
+    margin-left: 10px;
+
+    color: #333333;
 }
 
-h2{
+.container-mostruario{
     width: 100%;
-    margin-bottom: 15px;
-    margin-left: 21px;
-    
-    color: #FFFFFF;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
+.mostruario{
+    background-color: #FFFFFF;
+    width: 172px;
+    height: 140px;
+    margin: 10px;
+}
+
+.img-mostruario{
+    width: 120px;
+    height: 87px;
+    border-radius: 4px;
+}
 
 
 
