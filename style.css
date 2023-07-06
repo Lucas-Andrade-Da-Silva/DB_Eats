@@ -1,48 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     background-color: rgb(211, 207, 207);
 }
 
 .righteous{
-    font-family: 'Righteous';
+    font-family: 'Permanent marker', sans-serif;
+}
+
+.f-700{
+    font-weight: 700;
 }
 
 .cabeçalho{
-    width: 414px;
-    height: 92px;
+    width: 100%;/* 414px; */
+    /* height: 92px; */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+   
 }
 
-.cabeçalho img{
+.cabeçalho > img{
     width: 100%;
-    height: 92px;
-
-    display: flex;
-    position: absolute;
+    /* height: 92px; */
+    box-shadow: 0px 5px 8px 2px rgb(63, 63, 63, 0.7);
 }
-.container{
-    width: 414px;
-    margin-top: 20px;
+main{
+    width: 100%;/* 414px; */
+    margin-top: calc(100vw * 0.35 + 30px);
+    margin-bottom: calc(100vw * 0.25 + 30px);
 }
 
-.texto-mostruario{
+.texto-produto{
     font-size: 26px;
-    font-weight: 400;
     line-height: 32px;
     margin-left: 10px;
 
     color: #333333;
 }
 
-.container-mostruario{
+.container-produto{
     width: 100%;
     margin-bottom: 30px;
-
+    margin-left: 10px;
+    gap: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,18 +57,49 @@ body{
     scrollbar-width: none;
 }
 
-.mostruario{
+.produto{
     background-color: #FFFFFF;
-    width: 172px;
-    height: 140px;
-    margin: 10px;
+    width: 170px;
+    height: 210px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.img-mostruario{
-    width: 120px;
+.produto div{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-produto{
+    width: 130px;
     height: 87px;
     border-radius: 4px;
+
+    margin-bottom: 10px;
 }
 
+.descricao{
+    
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+}
 
+.preco{
+    font-size: 16px;
+    line-height: 18px;
+}
 
+footer img{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -5px 8px 2px rgb(63, 63, 63, 0.7);
+}
